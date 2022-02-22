@@ -15,8 +15,7 @@
 .navbar {
   display: flex;
   background-color: #1f2937;
-  height: 6vh;
-  border: solid 2px black;
+  height: 8vh;
 }
 
 .navbar div {
@@ -42,12 +41,14 @@
   align-items: center;
   justify-content: end;
   margin-right: 14vw;
+  gap: 1rem;
 }
 /*start of the css for the non-navbar portion of first section.*/
 .intro {
   display: flex;
   background-color: #1f2937;
-  height: 900px;
+  height: 55vh;
+  align-items: center;
 }
 
 .intro .left {
@@ -57,12 +58,36 @@
   flex-direction: column;
   margin-left: 14vw;
 }
+
+.intro .left .text h2 {
+  display: inline-block;
+  width: 15vw;
+}
+
+.intro .left .text p {
+  display: flex;
+  width: 20vw;
+}
 .intro .right {
   flex-grow: 1;
   width: 50vh;
   display: flex;
-  justify-content: flex-end;
   margin-right: 14vw;
+  background-color: gray;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro .left .button button {
+  margin-top: 1vh;
+  background-color: #3882f6;
+  color: white;
+  border: none;
+  width: 6vw;
+  height: 2.4vh;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .intro p {
@@ -71,4 +96,141 @@
 }
 .intro h2 {
   color: #f9faf8;
+  font-size: 48px;
+}
+
+/*start of section two, some random information portion */
+.sectiontwo .bottom img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 12px;
+  border: solid #3882f6 4px;
+}
+
+.sectiontwo .top h2 {
+  font-size: 36px;
+  color: #1f2937;
+}
+
+.sectiontwo .top {
+  display: flex;
+  justify-content: center;
+  height: 12vh;
+  align-items: center;
+}
+
+.sectiontwo .bottom p {
+  color: gray;
+  text-align: center;
+}
+.sectiontwo .bottom {
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  gap: 4rem;
+}
+
+.sectiontwo .bottom .firstpic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10vw;
+}
+
+.sectiontwo .bottom .secondpic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10vw;
+}
+
+.sectiontwo .bottom .thirdpic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10vw;
+}
+
+.sectiontwo .bottom .fourthpic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10vw;
+}
+
+/*this is the start of section three, the quote section.*/
+
+.sectionthree p {
+  font-style: italic;
+  font-size: 36px;
+  display: flex;
+  width: 32vw;
+  color: #1f2937;
+}
+
+.sectionthree h2 {
+  display: flex;
+  width: 32vw;
+  justify-content: flex-end;
+  color: #1f2937;
+}
+
+.sectionthree {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/*this is the beginning of section four, the blue call to action box.*/
+.sectionfour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.sectionfour .bluearea {
+  display: flex;
+  background-color: #3882f6;
+  height: 10vh;
+  width: 60vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  gap: 30rem;
+}
+
+.sectionfour .bluearea .right .button button {
+  color: white;
+  height: 3vh;
+  width: 4vw;
+  background-color: #3882f6;
+  border-style: none;
+  border: solid white 2px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sectionfour .bluearea .left h2 {
+  color: white;
+}
+.sectionfour .bluearea .left p {
+  color: white;
+}
+
+/*this is the start of the footer.*/
+
+.footer {
+  background-color: #1f2937;
+  display: flex;
+  height: 5vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  color: white;
 }
